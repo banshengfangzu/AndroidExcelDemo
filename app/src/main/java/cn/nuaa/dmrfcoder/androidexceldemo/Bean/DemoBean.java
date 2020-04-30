@@ -6,37 +6,37 @@ package cn.nuaa.dmrfcoder.androidexceldemo.Bean;
  */
 
 public class DemoBean {
-    private String name;
-    private int age;
-    private boolean boy;
+    int beilv;
+    int shengchang;
+    double shouyibeishu;
 
-    public DemoBean(String name, int age, boolean boy) {
-        this.name = name;
-        this.age = age;
-        this.boy = boy;
+    public DemoBean(int beilv, int shengchang, double shouyibeishu) {
+        this.beilv = beilv;
+        this.shengchang = shengchang;
+        this.shouyibeishu = shouyibeishu;
     }
 
-    public String getName() {
-        return name;
+    public int getBeilv() {
+        return beilv;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setBeilv(int beilv) {
+        this.beilv = beilv;
     }
 
-    public int getAge() {
-        return age;
+    public int getShengchang() {
+        return shengchang;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setShengchang(int shengchang) {
+        this.shengchang = shengchang;
     }
 
-    public boolean isBoy() {
-        return boy;
+    public double getShouyibeishu() {
+        return shouyibeishu;
     }
 
-    public void setBoy(boolean boy) {
-        this.boy = boy;
+    public void setShouyibeishu(double shouyibeishu) {
+        this.shouyibeishu = shouyibeishu;
     }
 }

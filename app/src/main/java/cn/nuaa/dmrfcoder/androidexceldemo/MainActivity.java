@@ -171,14 +171,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 
         List<DemoBean> demoBeanList = new ArrayList<>();
-        DemoBean demoBean1 = new DemoBean("张三", 10, true);
-        DemoBean demoBean2 = new DemoBean("小红", 12, false);
-        DemoBean demoBean3 = new DemoBean("李四", 18, true);
-        DemoBean demoBean4 = new DemoBean("王香", 13, false);
-        demoBeanList.add(demoBean1);
-        demoBeanList.add(demoBean2);
-        demoBeanList.add(demoBean3);
-        demoBeanList.add(demoBean4);
+//        DemoBean demoBean1 = new DemoBean("张三", 10, true);
+//        DemoBean demoBean2 = new DemoBean("小红", 12, false);
+//        DemoBean demoBean3 = new DemoBean("李四", 18, true);
+//        DemoBean demoBean4 = new DemoBean("王香", 13, false);
+//        demoBeanList.add(demoBean1);
+//        demoBeanList.add(demoBean2);
+//        demoBeanList.add(demoBean3);
+//        demoBeanList.add(demoBean4);
         filePath = filePath + excelFileName;
 
 
