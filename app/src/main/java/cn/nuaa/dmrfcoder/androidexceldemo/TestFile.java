@@ -8,28 +8,22 @@ import cn.nuaa.dmrfcoder.androidexceldemo.Utils.ExcelUtil;
 import cn.nuaa.dmrfcoder.androidexceldemo.Utils.ReflectDemoUtils;
 
 public class TestFile {
-    public static final int  max_ex_num=24;
-    public static final double  yingli=0.05;
-    public static final double  zhisun=0.02;
+    public static final int max_ex_num = 24;
+    public static final double yingli = 0.05;
+    public static final double zhisun = 0.02;
 
     public static void main(String[] args) {
-//        int temp[] = {1, 2, 3, 5, 10, 20, 30};
 
-        int i1 = 1;
-
-        int beilv;
-        int shengchang;
         String filePath = "D:\\androidProject\\demo.xls";
 
 
-       List<String> titles = ReflectDemoUtils.getFiledNames(DemoBean.class);
+        List<String> titles = ReflectDemoUtils.getFiledNames(DemoBean.class);
         ExcelUtil.initExcel(filePath, "demo", titles);
         List<DemoBean> demoBeanList = new ArrayList<>();
 
 
         inner:
-        for (
-                ; i1 <= 8; i1++) {
+        for (int i1 = 1; i1 <= 8; i1++) {
 
             double temp = 0;
             out:
@@ -46,7 +40,6 @@ public class TestFile {
         }
 
 
-
         ExcelUtil.writeObjListToExcel(demoBeanList, filePath);
     }
 
@@ -57,7 +50,7 @@ public class TestFile {
      */
     public static double getResult(int x, int y) {
         double a = 1 - zhisun * x;
-        a=a<0.2?0:a;
+        a = a < 0.2 ? 0 : a;
         return Math.pow(yingli * x + 1, y) * Math.pow(a, max_ex_num - y);
     }
 
