@@ -3,9 +3,9 @@ package cn.nuaa.dmrfcoder.androidexceldemo;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.nuaa.dmrfcoder.androidexceldemo.Bean.Bean;
 import cn.nuaa.dmrfcoder.androidexceldemo.Bean.DemoBean;
 import cn.nuaa.dmrfcoder.androidexceldemo.Utils.ExcelUtil;
+import cn.nuaa.dmrfcoder.androidexceldemo.Utils.ReflectDemoUtils;
 
 public class TestFile {
     public static final int  max_ex_num=24;
@@ -22,9 +22,8 @@ public class TestFile {
         String filePath = "D:\\androidProject\\demo.xls";
 
 
-        String[] titles = {"blv", "sc", "syl"};
+       List<String> titles = ReflectDemoUtils.getFiledNames(DemoBean.class);
         ExcelUtil.initExcel(filePath, "demo", titles);
-
         List<DemoBean> demoBeanList = new ArrayList<>();
 
 
