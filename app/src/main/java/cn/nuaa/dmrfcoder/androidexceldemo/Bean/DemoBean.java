@@ -6,37 +6,37 @@ package cn.nuaa.dmrfcoder.androidexceldemo.Bean;
  */
 
 public class DemoBean {
-    int beilv;
-    int shengchang;
-    double shouyibeishu;
+    int 倍率;
+    int 胜场;
+    double 收益倍率;
 
-    public DemoBean(int beilv, int shengchang, double shouyibeishu) {
-        this.beilv = beilv;
-        this.shengchang = shengchang;
-        this.shouyibeishu = shouyibeishu;
+    public DemoBean(int 倍率, int 胜场, double 收益倍率) {
+        this.倍率 = 倍率;
+        this.胜场 = 胜场;
+        this.收益倍率 = 收益倍率;
     }
 
-    public int getBeilv() {
-        return beilv;
+    public int get倍率() {
+        return 倍率;
     }
 
-    public void setBeilv(int beilv) {
-        this.beilv = beilv;
+    public void set倍率(int 倍率) {
+        this.倍率 = 倍率;
     }
 
-    public int getShengchang() {
-        return shengchang;
+    public int get胜场() {
+        return 胜场;
     }
 
-    public void setShengchang(int shengchang) {
-        this.shengchang = shengchang;
+    public void set胜场(int 胜场) {
+        this.胜场 = 胜场;
     }
 
-    public double getShouyibeishu() {
-        return shouyibeishu;
+    public double get收益倍率() {
+        return 收益倍率;
     }
 
-    public void setShouyibeishu(double shouyibeishu) {
-        this.shouyibeishu = shouyibeishu;
+    public void set收益倍率(double 收益倍率) {
+        this.收益倍率 = 收益倍率;
     }
 }

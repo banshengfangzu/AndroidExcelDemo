@@ -8,12 +8,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import cn.nuaa.dmrfcoder.androidexceldemo.Bean.DemoBean;
 import jxl.Workbook;
@@ -195,9 +191,9 @@ public class ExcelUtil {
                 for (int j = 0; j < objList.size(); j++) {
                     DemoBean demoBean = (DemoBean) objList.get(j);
                     List<String> list = new ArrayList<>();
-                    list.add(String.valueOf(demoBean.getBeilv()));
-                    list.add(String.valueOf(demoBean.getShengchang()));
-                    list.add(String.valueOf(demoBean.getShouyibeishu()));
+                    list.add(String.valueOf(demoBean.get倍率()));
+                    list.add(String.valueOf(demoBean.get胜场()));
+                    list.add(String.valueOf(demoBean.get收益倍率()));
 
                     for (int i = 0; i < list.size(); i++) {
                         sheet.addCell(new Label(i, j + 1, list.get(i), arial12format));
@@ -273,9 +269,9 @@ public class ExcelUtil {
                         List<String> list = ReflectDemoUtils.setValue(t);
 
 //                        List<String> list = new ArrayList<>();
-//                        list.add(String.valueOf(demoBean.getBeilv()));
-//                        list.add(String.valueOf(demoBean.getShengchang()));
-//                        list.add(String.valueOf(demoBean.getShouyibeishu()));
+//                        list.add(String.valueOf(demoBean.get倍率()));
+//                        list.add(String.valueOf(demoBean.get胜场()));
+//                        list.add(String.valueOf(demoBean.get收益倍率()));
 
                         for (int i = 0; i < list.size(); i++) {
                             sheet.addCell(new Label(i, j + 1, list.get(i), arial12format));

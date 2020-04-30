@@ -16,18 +16,20 @@ public class TestFile {
 
         String filePath = "D:\\androidProject\\demo.xls";
 
-
+        //创建文件部分     bean可以自己定义  如有需要可以中文命名，这样文件就会显示中文列明
         List<String> titles = ReflectDemoUtils.getFiledNames(DemoBean.class);
+
+
         ExcelUtil.initExcel(filePath, "demo", titles);
+
+
+
+        //数据生成部分 写自己的代码
         List<DemoBean> demoBeanList = new ArrayList<>();
-
-
-        inner:
-        for (int i1 = 1; i1 <= 8; i1++) {
+        inner:for (int i1 = 1; i1 <= 8; i1++) {
 
             double temp = 0;
-            out:
-            for (int i = 0; i < 31; i++) {
+            out:for (int i = 0; i < 31; i++) {
 
                 double result = getResult(i, i1);
                 if (result <= 1) continue out;
@@ -39,7 +41,7 @@ public class TestFile {
             }
         }
 
-
+        //写入数据部分
         ExcelUtil.writeObjListToExcel(demoBeanList, filePath);
     }
 
