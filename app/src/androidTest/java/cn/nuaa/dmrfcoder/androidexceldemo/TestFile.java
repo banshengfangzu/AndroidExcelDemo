@@ -8,6 +8,10 @@ import cn.nuaa.dmrfcoder.androidexceldemo.Bean.DemoBean;
 import cn.nuaa.dmrfcoder.androidexceldemo.Utils.ExcelUtil;
 
 public class TestFile {
+    public static final int  max_ex_num=24;
+    public static final double  yingli=0.05;
+    public static final double  zhisun=0.02;
+
     public static void main(String[] args) {
 //        int temp[] = {1, 2, 3, 5, 10, 20, 30};
 
@@ -26,7 +30,7 @@ public class TestFile {
 
         inner:
         for (
-                ; i1 < 60; i1++) {
+                ; i1 <= 8; i1++) {
 
             double temp = 0;
             out:
@@ -53,9 +57,9 @@ public class TestFile {
      * @return
      */
     public static double getResult(int x, int y) {
-        double a = 1 - 0.02 * x;
+        double a = 1 - zhisun * x;
         a=a<0.2?0:a;
-        return Math.pow(0.05 * x + 1, y) * Math.pow(a, 100 - y);
+        return Math.pow(yingli * x + 1, y) * Math.pow(a, max_ex_num - y);
     }
 
 

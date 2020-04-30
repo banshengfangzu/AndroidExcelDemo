@@ -3,10 +3,13 @@ package cn.nuaa.dmrfcoder.androidexceldemo.Utils;
 import android.content.Context;
 import android.widget.Toast;
 
+import com.blankj.utilcode.util.ReflectUtils;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -187,7 +190,7 @@ public class ExcelUtil {
      *
      * @param objList  待写入的list
      * @param fileName
-     * @param c
+     * @param
      * @param <T>
      */
     @SuppressWarnings("unchecked")
@@ -207,7 +210,7 @@ public class ExcelUtil {
                 for (int j = 0; j < objList.size(); j++) {
                     DemoBean demoBean = (DemoBean) objList.get(j);
                     List<String> list = new ArrayList<>();
-                    list.add(String.valueOf(demoBean.getBeilv()));
+                    list.add(        String.valueOf(demoBean.getBeilv()));
                     list.add(String.valueOf(demoBean.getShengchang()));
                     list.add(String.valueOf(demoBean.getShouyibeishu()));
 
