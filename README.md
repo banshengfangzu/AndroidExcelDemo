@@ -17,7 +17,7 @@ implementation group: 'net.sourceforge.jexcelapi', name: 'jxl', version: '2.6.12
 
   String filePath = "D:\\androidProject\\demo.xls";
 
-        //创建文件部分     bean可以自己定义  如有需要可以中文命名，这样文件就会显示中文列明
+        //创建文件部分     bean可以自己定义  如有需要可以中文命名，这样文件就会显示中文列名
         List<String> titles = ReflectDemoUtils.getFiledNames(DemoBean.class);
 
 

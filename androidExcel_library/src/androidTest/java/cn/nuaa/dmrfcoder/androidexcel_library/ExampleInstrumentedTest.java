@@ -1,4 +1,4 @@
-package cn.nuaa.dmrfcoder.androidexceldemo;
+package cn.nuaa.dmrfcoder.androidexcel_library;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

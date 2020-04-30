@@ -1,9 +1,9 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "cn.nuaa.dmrfcoder.androidexceldemo"
+//        applicationId "cn.nuaa.dmrfcoder.androidexceldemo"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
